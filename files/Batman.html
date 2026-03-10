@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Dark Knight</title>
+<link rel="stylesheet" href="Batman.css">
+<link href="https://www.fontspace.com/rise-hans-zimmer-font-f156869" rel="stylesheet"/>
+</head>
+<body>
+
+
+<nav>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="showPage('home')" data-page="home" class="active">Home</a></li>
+    <li><a href="#" onclick="showPage('allies')" data-page="allies">Allies</a></li>
+    <li><a href="#" onclick="showPage('gallery')" data-page="gallery">Gallery</a></li>
+    <li><a href="#" onclick="showPage('villains')" data-page="villains">Villains</a></li>
+  </ul>
+  <div class="nav-logo">
+    <img src="https://www.figma.com/api/mcp/asset/1dad0601-8208-4b8f-a684-2dac96c4e5d2" alt="Batman Logo"/>
+  </div>
+  <div style="width:320px; display:flex; justify-content:flex-end;">
+    <a href="#" onclick="showPage('signin')" data-page="signin"
+       style="color:var(--yellow); font-family:'Averia Libre',cursive; font-size:18px; text-decoration:none; border:1px solid var(--yellow); padding:8px 22px; border-radius:20px; transition:background 0.25s, color 0.25s;"
+       onmouseover="this.style.background='var(--yellow)';this.style.color='#000'"
+       onmouseout="this.style.background='transparent';this.style.color='var(--yellow)'">Sign In</a>
+  </div>
+</nav>
+
+
+<div id="page-home" class="page active">
+
+  
+  <section class="hero">
+    <div class="hero-bg">
+      <video src="images&videos/Темный_рыцарь_2008 —_русский_трейлер.mp4" autoplay muted loop></video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-title-top">THE DARK</div>
+      <div class="hero-title-bot">KNIGHT</div>
+      <p class="hero-desc">The Batman: Robert Pattinson stars in the dual role of Gotham City's vigilante detective and his alter ego, reclusive billionaire Bruce Wayne.</p>
+      <div class="ratings">
+        <div class="rating-box">
+          <img class="rating-logo" src="https://www.figma.com/api/mcp/asset/906be277-83d7-49bf-b4dc-61b24b9c9280" alt="IMDb"/>
+          <span class="rating-score">7,2</span><span class="rating-denom">/10</span>
+        </div>
+        <div class="rating-box">
+          <img class="rating-logo" src="https://www.figma.com/api/mcp/asset/5c64c10c-2189-4b61-9cc7-18a7261a70f2" alt="RT"/>
+          <span class="rating-score">7,8</span><span class="rating-denom">/10</span>
+        </div>
+      </div>
+      <a href="https://youtu.be/HF1_epZNoCg" target="_blank" class="btn-trailer">
+        <span class="play-icon"></span>Watch Trailer
+      </a>
+    </div>
+  </section>
+
+  
+  <section class="section-about">
+    <h2 class="section-title reveal">About Batman</h2>
+    <hr class="divider"/>
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="reveal reveal-left">Batman is a vigilante superhero from Gotham City. His real name is Bruce Wayne, a billionaire who fights crime using intelligence, combat skills, and advanced technology. He has no superpowers — only discipline, strategy, and willpower.</p>
+        <p class="reveal reveal-left" style="transition-delay:0.15s">After witnessing the murder of his parents as a child, Bruce Wayne dedicated his life to justice. He trained his mind and body to become Gotham's dark protector — Batman.</p>
+      </div>
+      <img class="about-img reveal reveal-right" src="https://www.figma.com/api/mcp/asset/893c2cb2-167d-47b7-b053-127c44d21adc" alt="Batman"/>
+    </div>
+  </section>
+
+ 
+  <section class="section-abilities">
+    <h2 class="section-title reveal">Abilities &amp; Gear</h2>
+    <hr class="divider"/>
+    <div class="abilities-grid">
+      <div class="ability-card reveal">
+        <img src="https://www.figma.com/api/mcp/asset/7c4eeb97-21bb-4baa-b750-8daf030964fc" alt="Intelligence"/>
+        <div class="ability-label">Intelligence</div>
+      </div>
+      <div class="ability-card reveal" style="transition-delay:0.1s">
+        <img src="https://www.figma.com/api/mcp/asset/b78b4b73-8c08-44ae-b72e-b28123fb5b2f" alt="Combat"/>
+        <div class="ability-label">Combat</div>
+      </div>
+      <div class="ability-card reveal" style="transition-delay:0.2s">
+        <img src="https://www.figma.com/api/mcp/asset/7f5002b9-2c85-462d-a77a-048d2064e766" alt="Gadgets"/>
+        <div class="ability-label">Gadgets</div>
+      </div>
+    </div>
+    <div class="abilities-grid-row2">
+      <div class="ability-card reveal" style="transition-delay:0.1s">
+        <img src="https://www.figma.com/api/mcp/asset/8b5cb068-286e-4fb8-be11-4c3641f0629a" alt="Batmobile"/>
+        <div class="ability-label">Batmobile</div>
+      </div>
+      <div class="ability-card reveal" style="transition-delay:0.2s">
+        <img src="https://www.figma.com/api/mcp/asset/0424840b-6b60-4d32-a681-3c869c3a506f " alt="Batwing"/>
+        <div class="ability-label">Batwing</div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section-actors">
+    <h2 class="section-title reveal">Actors who played Batman</h2>
+    <hr class="divider"/>
+    <div class="actors-grid">
+      <div class="actor-card reveal reveal-scale">
+        <img class="actor-card-img" src="https://www.figma.com/api/mcp/asset/68b0377c-43d0-42b2-9d41-4b02be1fafa6" alt="Val Kilmer"/>
+        <div class="actor-info">
+          <div class="actor-name">Val Edward Kilmer</div>
+          <p class="actor-bio">Was an American actor. Initially a stage actor, he later found fame as a leading man in films in a wide variety of genres, including comedies, dramas, action adventures, westerns, historical films, crime dramas, science fiction films, and fantasy films.</p>
+        </div>
+      </div>
+      <div class="actor-card reveal reveal-scale" style="transition-delay:0.12s">
+        <img class="actor-card-img" src="https://www.figma.com/api/mcp/asset/14ed8eba-b884-4414-a82f-4c27fe2d2b29" alt="George Clooney"/>
+        <div class="actor-info">
+          <div class="actor-name">George Timothy Clooney</div>
+          <p class="actor-bio">Actor, director, writer, and producer who became the first person to be nominated for Academy Awards in six different categories, winning his first Academy Award for Best Supporting Actor for his role in the 2005 film Syriana.</p>
+        </div>
+      </div>
+      <div class="actor-card reveal reveal-scale" style="transition-delay:0.08s">
+        <img class="actor-card-img" src="https://www.figma.com/api/mcp/asset/1400e960-da25-40ca-b9fb-21ed06ea87a4" alt="Christian Bale"/>
+        <div class="actor-info">
+          <div class="actor-name">Christian Bale</div>
+          <p class="actor-bio">Played Batman in Christopher Nolan's Dark Knight trilogy and earned critical acclaim for his roles in American Psycho, The Machinist, American Hustle, and The Fighter, the latter earning him an Academy Award for Best Supporting Actor.</p>
+        </div>
+      </div>
+      <div class="actor-card reveal reveal-scale" style="transition-delay:0.16s">
+        <img class="actor-card-img" src="https://www.figma.com/api/mcp/asset/0915b9a8-ad76-4646-969a-b963cab9004b" alt="Ben Affleck"/>
+        <div class="actor-info">
+          <div class="actor-name">Ben Affleck</div>
+          <p class="actor-bio">Actor and director who first attracted attention for his roles in Dazed and Confused, Mallrats, and Chasing Amy. He later won an Academy Award for Best Picture for directing and producing the 2012 film Argo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 "The Dark Knight". Unofficial resource.</footer>
+</div>
+
+
+<div id="page-allies" class="page">
+  <div class="characters-page">
+    <div class="chars-header">
+      <h1 class="chars-title">Allies</h1>
+      <hr class="divider" style="margin-bottom:0"/>
+    </div>
+    <div class="chars-scroll-wrapper">
+      <div class="chars-row">
+        <div class="char-card">
+          <img src="https://www.figma.com/api/mcp/asset/1301bf77-450f-4612-8c3f-f0ba281ec4e1" alt="Alfred Pennyworth"/>
+          <div class="char-name">Alfred Pennyworth</div>
+        </div>
+        <div class="char-card">
+          <img src="https://www.figma.com/api/mcp/asset/527b0e95-5fde-4104-963e-076f163f63fc" alt="James Gordon"/>
+          <div class="char-name">James Gordon</div>
+        </div>
+        <div class="char-card">
+          <img src="https://www.figma.com/api/mcp/asset/310df896-0a96-4f03-8a87-1e4de9bc463a" alt="Lucius Fox"/>
+          <div class="char-name">Lucius Fox</div>
+        </div>
+        <div class="char-card">
+          <img src="https://www.figma.com/api/mcp/asset/9cd9239e-2f9c-4734-ae05-60afa60c0988" alt="Selina Kyle"/>
+          <div class="char-name">Selina Kyle</div>
+        </div>
+        <div class="char-card">
+          <img src="https://www.figma.com/api/mcp/asset/50e239de-b561-4355-a2cf-03ef5bb94f54" alt="John Blake"/>
+          <div class="char-name">John Blake</div>
+        </div>
+      </div>
+    </div>
+    <footer>© 2026 "The Dark Knight". Unofficial resource.</footer>
+  </div>
+</div>
+
+
+<div id="page-villains" class="page">
+  <div class="characters-page">
+    <div class="chars-header">
+      <h1 class="chars-title">Villains</h1>
+      <hr class="divider" style="margin-bottom:0"/>
+    </div>
+    <div class="chars-scroll-wrapper">
+      <div class="chars-row">
+        <div class="char-card">
+          <img src="https://www.figma.com/api/mcp/asset/79b70c88-6d25-4c36-ba9f-cd4bb2d67720" alt="The Joker"/>
+          <div class="char-name">The Joker</div>
+        </div>
+        <div class="char-card">
+          <img src="https://www.figma.com/api/mcp/asset/d55b9c34-ab90-4c0c-a315-ceaa6bac17c6" alt="Jonathan Crane"/>
+          <div class="char-name">Jonathan Crane</div>
+        </div>
+        <div class="char-card">
+          <img src="https://www.figma.com/api/mcp/asset/5618222a-4f64-4306-b1db-ddb19225b4f2" alt="Harvey Dent"/>
+          <div class="char-name">Harvey Dent</div>
+        </div>
+        <div class="char-card">
+          <img src="https://www.figma.com/api/mcp/asset/7577fd8a-0829-4b3d-989e-85d2d26af068" alt="Lau"/>
+          <div class="char-name">Lau</div>
+        </div>
+        <div class="char-card">
+          <img src="https://www.figma.com/api/mcp/asset/c7e9892a-4903-46f9-94d6-51ad718a1236" alt="Sal Maroni"/>
+          <div class="char-name">Sal Maroni</div>
+        </div>
+        <div class="char-card">
+          <img src="https://www.figma.com/api/mcp/asset/3d245024-cce0-40fc-ab5a-c1ec71751fa6" alt="Gambol"/>
+          <div class="char-name">Gambol</div>
+        </div>
+      </div>
+    </div>
+    <footer>© 2026 "The Dark Knight". Unofficial resource.</footer>
+  </div>
+</div>
+
+
+<div id="page-gallery" class="page">
+  <div class="gallery-page">
+    <div class="chars-header">
+      <h1 class="chars-title">Gallery</h1>
+      <hr class="divider" style="margin-bottom:0"/>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://www.figma.com/api/mcp/asset/3e5ad204-0b49-40f3-bdba-9160ac6f16be" alt="Batman"/>
+        <div class="gallery-item-label">The Dark Knight</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://www.figma.com/api/mcp/asset/893c2cb2-167d-47b7-b053-127c44d21adc" alt="Batman"/>
+        <div class="gallery-item-label">Batman</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://www.figma.com/api/mcp/asset/7c4eeb97-21bb-4baa-b750-8daf030964fc" alt="Intelligence"/>
+        <div class="gallery-item-label">Intelligence</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://www.figma.com/api/mcp/asset/8b5cb068-286e-4fb8-be11-4c3641f0629a" alt="Batmobile"/>
+        <div class="gallery-item-label">Batmobile</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://www.figma.com/api/mcp/asset/0424840b-6b60-4d32-a681-3c869c3a506f" alt="Batwing"/>
+        <div class="gallery-item-label">Batwing</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://www.figma.com/api/mcp/asset/7f5002b9-2c85-462d-a77a-048d2064e766" alt="Gadgets"/>
+        <div class="gallery-item-label">Gadgets</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://www.figma.com/api/mcp/asset/79b70c88-6d25-4c36-ba9f-cd4bb2d67720" alt="The Joker"/>
+        <div class="gallery-item-label">The Joker</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://www.figma.com/api/mcp/asset/1400e960-da25-40ca-b9fb-21ed06ea87a4" alt="Christian Bale"/>
+        <div class="gallery-item-label">Christian Bale</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://www.figma.com/api/mcp/asset/1301bf77-450f-4612-8c3f-f0ba281ec4e1" alt="Alfred Pennyworth"/>
+        <div class="gallery-item-label">Alfred Pennyworth</div>
+      </div>
+    </div>
+    <footer>© 2026 "The Dark Knight". Unofficial resource.</footer>
+  </div>
+</div>
+
+
+<div id="page-signin" class="page">
+  <div class="signin-page">
+    <div class="signin-box">
+      <img class="signin-logo" src="https://www.figma.com/api/mcp/asset/1dad0601-8208-4b8f-a684-2dac96c4e5d2" alt="Batman Logo"/>
+      <div class="signin-title">Sign in</div>
+      <div class="input-group">
+        <img class="input-icon" src="Images/User Male.png" alt="user"/>
+        <input class="form-input" type="text" placeholder="Enter username"/>
+      </div>
+      <div class="input-group">
+        <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="left:14px;top:50%;transform:translateY(-50%);position:absolute;width:28px;height:28px;">
+          <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+        <input class="form-input" type="password" placeholder="Enter password"/>
+      </div>
+      <div class="remember-row">
+        <input type="checkbox" id="remember"/>
+        <label for="remember">Remember me</label>
+      </div>
+      <button class="btn-signin">Sign in</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">×</span>
+  <img id="lightboxImg" src="" alt=""/>
+</div>
+
+<script src="Batman.js"></script>
+</body>
+</html>
